@@ -100,7 +100,7 @@ img {
 # Link zu LiaScript
 [![LiaScript Course](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/Ifi-DiAgnostiK-Project/Tapetensymbole/refs/heads/main/makros.md)
 
-> Diese Datei ist automatisch generiert und enthält Makros für die DiAgnostiK-Bilder der Gewerke.
+> Diese Datei ist automatisch generiert und enthält Makros für die DIN EN 235 Tapetensymbole.
 
 # Anleitung
 > Der Befehl zum einbinden eines Bildes lautet `@<Bereich>.<Name>(Größe)`.
