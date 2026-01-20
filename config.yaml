@@ -1,5 +1,5 @@
 makros_setup: |
-  author: "Volker Göhler, Niklas Werner"
+  author: "Volker Göhler"
   email: "volker.goehler@informatik.tu-freiberg"
   version: "0.1.0"
   edit: true
@@ -40,13 +40,13 @@ how_to_use: |
   
   ## Beispiel
   
-  `@Tapetensymbole.Beispiel(10)`
+  `@Ansatz_des_Musters.Ansatzfrei(10)`
 
-  @Tapetensymbole.Beispiel(10)
+  @Ansatz_des_Musters.Ansatzfrei(10)
 
-  `@Tapetensymbole.Beispiel.src`
+  `@Ansatz_des_Musters.Ansatzfrei.src`
 
-  @Tapetensymbole.Beispiel.src
+  @Ansatz_des_Musters.Ansatzfrei.src
 
   ## Bereiche und Befehle
 
