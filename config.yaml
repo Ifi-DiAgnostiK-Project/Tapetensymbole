@@ -24,7 +24,7 @@ how_to_use: |
   # Link zu LiaScript
   [![LiaScript Course](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?{raw_location})
   
-  > Diese Datei ist automatisch generiert und enthält Makros für die DiAgnostiK-Bilder der Gewerke.
+  > Diese Datei ist automatisch generiert und enthält Makros für die DIN EN 235 Tapetensymbole.
   
   # Anleitung
   > Der Befehl zum einbinden eines Bildes lautet `@<Bereich>.<Name>(Größe)`.
