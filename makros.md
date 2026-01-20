@@ -14,7 +14,6 @@ img {
  max-height: fit-content;
 }
 @end
-
 -->
 
 # Link zu LiaScript
@@ -46,6 +45,11 @@ Alle Bilder sowie ihre Bereiche und die Befehle um sie zu laden sind in den Tabe
 
 ## Bereiche und Befehle
 
-Im Nachfolgenden sind alle Bilder aller Bereiche und passende Befehle aufgelistet, die in dieser Sammlung enthalten sind. 
+Im Nachfolgenden sind alle Bilder aller Bereiche und passende Befehle aufgelistet, die in dieser Sammlung enthalten sind.
 
-Diese Datei wird automatisch vom GitHub Workflow generiert, sobald Bilder im img/ Ordner hinzugefügt werden.
+
+### Tapetensymbole
+
+
+|Bild|Name|Befehl|
+|---|---|---|
