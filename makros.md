@@ -1,0 +1,51 @@
+<!--
+repository: "https://github.com/Ifi-DiAgnostiK-Project/Tapetensymbole"
+author: "Volker Göhler, Niklas Werner"
+email: "volker.goehler@informatik.tu-freiberg"
+version: "0.1.0"
+edit: true
+title: "DiAgnostiK DIN-EN-235 Tapetensymbole Makros"
+tags: "Wissensspeicher"
+
+@diagnostik_image: <img src='@0/@1' alt='@1' style='height: @2rem'>
+
+@style
+img {
+ max-height: fit-content;
+}
+@end
+
+-->
+
+# Link zu LiaScript
+[![LiaScript Course](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/Ifi-DiAgnostiK-Project/Tapetensymbole/refs/heads/main/makros.md)
+
+> Diese Datei ist automatisch generiert und enthält Makros für die DiAgnostiK-Bilder der Gewerke.
+
+# Anleitung
+> Der Befehl zum einbinden eines Bildes lautet `@<Bereich>.<Name>(Größe)`.
+> Hängt man statt der Größe `.src` an, so wird der Link zum Bild angezeigt. `@<Bereich>.<Name>.src`
+
+- Der Bereich ist der Ordnername, in dem sich das Bild befindet.
+- Der Name ist der Dateiname ohne Endung.
+- Die Größe ist in Zeilen angegeben, die das Bild hoch sein soll.
+
+Alle Bilder sowie ihre Bereiche und die Befehle um sie zu laden sind in den Tabellen weiter unten abgebildet.
+
+**Die Anzeige benötigt LiaScript!**
+
+## Beispiel
+
+`@Tapetensymbole.Beispiel(10)`
+
+@Tapetensymbole.Beispiel(10)
+
+`@Tapetensymbole.Beispiel.src`
+
+@Tapetensymbole.Beispiel.src
+
+## Bereiche und Befehle
+
+Im Nachfolgenden sind alle Bilder aller Bereiche und passende Befehle aufgelistet, die in dieser Sammlung enthalten sind. 
+
+Diese Datei wird automatisch vom GitHub Workflow generiert, sobald Bilder im img/ Ordner hinzugefügt werden.

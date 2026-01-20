@@ -1,0 +1,52 @@
+name: Update makros.md on push
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-makros-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Checkout code repo
+        uses: actions/checkout@v4
+        with:
+          repository: Ifi-DiAgnostiK-Project/LiaScript_Image_Makro_Generator
+          ref: main
+          path: external/code
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install poetry
+          cd external/code
+          poetry install
+
+      - name: Create Makros with Module
+        run: |
+          poetry -P=external/code run python -m liascript_img_makro_gen.main --config config.yaml
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add makros.md
+          git diff --cached --quiet && echo "No changes to commit." && exit 0
+          git commit -m "Auto-update makros.md [skip ci]"
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref_name }}
